@@ -1,0 +1,28 @@
+cat > .gitignore <<'EOF'
+## .NET
+bin/
+obj/
+
+## Rider / VS / VSCode
+.vs/
+.vscode/*
+!.vscode/extensions.json
+
+## OS
+.DS_Store
+Thumbs.db
+
+## Logs
+*.log
+
+## Secrets
+appsettings.*.json
+!appsettings.Development.json
+
+## Test results
+TestResults/
+
+## User-specific files
+*.user
+*.suo
+EOF
